@@ -4,7 +4,7 @@ node {
 	}
 	stage('build'){
 			def mvnHome
-			mvnHome = tool 'maven-3.6.2'
+			mvnHome = tool 'maven-3.6.3'
 			sh "'${mvnHome}/bin/mvn' package"
 	}
 	stage('final'){
